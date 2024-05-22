@@ -4,11 +4,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="proyecto1.css">
+    <link rel="stylesheet">
+    <style>
+      * {
+  box-sizing: border-box; }
+
+html {
+  background: #000;
+  background-size: cover;
+  font-size: 10px;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+
+#logo {
+  animation: logo-entry 4s ease-in;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 40; }
+
+h1 {
+  animation: text-glow 2s ease-out infinite alternate;
+  font-family: 'Ubuntu', sans-serif;
+  color: #00a4a2;
+  font-size: 48px;
+  font-size: 4.8rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50px; }
+ 
+ 
+
+ .titulo {
+  animation: before-glow 2s ease-out infinite alternate;
+  border-left: 535px solid transparent;
+  border-bottom: 10px solid #00a4a2;
+  content: ' ';
+  height: 0;
+  position: center;
+  right: 275px;
+  top: -10px;
+  width: 0; 
+ }
+
+#fade-box {
+  animation: input-entry 3s ease-in;
+  z-index: 4;
+  
+   }
+
+.stark-login form {
+  animation: form-entry 3s ease-in-out;
+  
+  border: 6px solid #00a4a2;
+  box-shadow: 0 0 15px #00fffd;
+  border-radius: 5px;
+  display: inline-block;
+  height: 310px;
+  margin: 200px auto 0;
+  position: relative;
+  z-index: 4;
+  width: 510px;
+  transition: 1s all; }
+  
+.hexagons {
+  animation: logo-entry 4s ease-in;
+  color: #000;
+  font-size: 52px;
+  font-size: 5.1rem;
+  letter-spacing: -0.2em;
+  line-height: 0.7;
+  position: absolute;
+  text-shadow: 0 0 6px #00fffc;
+  top: 310px;
+  width: 100%;
+  transform: perspective(1000px) rotateX(60deg) scale(2.3);
+  z-index: -3; }
+
+@keyframes logo-entry {
+  0% {
+    opacity: 0; }
+
+  80% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@keyframes circle-entry {
+  0% {
+    opacity: 0; }
+
+  20% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0.4; } }
+@keyframes input-entry {
+  0% {
+    opacity: 0; }
+
+  90% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@keyframes form-entry {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    padding: 0; }
+
+  20% {
+    height: 0;
+    border: 1px solid #00a4a2;
+    width: 0;
+    opacity: 0;
+    padding: 0; }
+
+  40% {
+    width: 0;
+    height: 220px;
+    border: 6px solid #00a4a2;
+    opacity: 1;
+    padding: 0; }
+
+  100% {
+    height: 220px;
+    width: 500px; } }
+@keyframes box-glow {
+  0% {
+    border-color: #00b8b6;
+    box-shadow: 0 0 5px rgba(0, 255, 253, 0.2), inset 0 0 5px rgba(0, 255, 253, 0.1), 0 2px 0 black; }
+
+  100% {
+    border-color: #00fffc;
+    box-shadow: 0 0 20px rgba(0, 255, 253, 0.6), inset 0 0 10px rgba(0, 255, 253, 0.4), 0 2px 0 black; } }
+@keyframes text-glow {
+  0% {
+    color: #00a4a2;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000; }
+
+  100% {
+    color: #00fffc;
+    text-shadow: 0 0 20px rgba(0, 255, 253, 0.6), 0 0 10px rgba(0, 255, 253, 0.4), 0 2px 0 black; } }
+@keyframes before-glow {
+  0% {
+    border-bottom: 10px solid #00a4a2; }
+
+  100% {
+    border-bottom: 10px solid #00fffc; } }
+@keyframes after-glow {
+  0% {
+    border-top: 16px solid #00a4a2; }
+
+  100% {
+    border-top: 16px solid #00fffc; } }
+
+
+    @media only screen and (max-width: 608px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #logo {
+                width: 90%;
+                margin-top: 20px;
+            }
+
+            h1 {
+                font-size: 3rem;
+                top: 20px;
+            }
+
+            .stark-login form {
+                width: 90%;
+                height: auto;
+                margin: 20px auto 0;
+            }
+
+            .hexagons {
+                font-size: 2.5rem;
+                top: 100px;
+            }
+
+            #circle1 {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 389px) {
+            h1 {
+                font-size: 2rem;
+                top: 10px;
+            }
+
+            .hexagons {
+                font-size: 2rem;
+                top: 80px;
+            }
+
+            .stark-login form {
+                margin-top: 10px;
+            }
+        }
+
+      
+    </style>
 </head>
 <body>
     <div id="logo"> 
-        <h1><i> Marvel Heroes Running</i></h1>
+        <h1><i> Selecciona un jugador</i></h1>
       </div> 
       <section class="stark-login">
         
@@ -25,6 +235,7 @@
             
            
               </div>
+             
             </form>
             <div class="hexagons">
               <span>&#x2B22;</span>
@@ -108,6 +319,7 @@
                     <li></li>
                     <li></li>
                   </ul>
+
                   
 </body>
 </html>

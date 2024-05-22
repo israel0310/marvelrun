@@ -1,5 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu:400,700italic";
-@import "https://fonts.googleapis.com/css?family=Cabin:400";
 * {
   box-sizing: border-box; }
 
@@ -13,9 +11,6 @@ html {
   text-align: center;
   width: 100%; }
 
-/* =========================================
-Stark Industries Logo
-========================================= */
 #logo {
   animation: logo-entry 4s ease-in;
   width: 500px;
@@ -66,11 +61,6 @@ h1 {
   width: 0; 
  }
 
-   
-
-/* =========================================
-Log in form
-========================================= */
 #fade-box {
   animation: input-entry 3s ease-in;
   z-index: 4;
@@ -91,16 +81,6 @@ Log in form
   width: 510px;
   transition: 1s all; }
   
-   
-
-
-
-
-
-
-/* =========================================
-Hexagon Mesh
-========================================= */
 .hexagons {
   animation: logo-entry 4s ease-in;
   color: #000;
@@ -115,9 +95,6 @@ Hexagon Mesh
   transform: perspective(600px) rotateX(60deg) scale(1.4);
   z-index: -3; }
 
-/* =========================================
-Animation Keyframes
-========================================= */
 @keyframes logo-entry {
   0% {
     opacity: 0; }
